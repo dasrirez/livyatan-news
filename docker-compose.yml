@@ -1,0 +1,31 @@
+version: "3.5"
+services:
+  livreact:
+    image: livreact
+    container_name: liv_react
+    build:
+      context: .
+      dockerfile: Dockerfiles/React/Dockerfile
+    depends_on:
+      - livexpress
+    ports:
+      - 5000:5000
+  livexpress:
+    image: livexpress
+    container_name: liv_express
+    build:
+      context: .
+      dockerfile: Dockerfiles/Express/Dockerfile
+    environment:
+        NODE_ENV: "production"
+        LIVYATAN_SECRET: "${LIVYATAN_SECRET}"
+        LIVYATAN_NEWSAPI_KEY: ${LIVYATAN_NEWSAPI_KEY}
+        LIVYATAN_MONGO_URL: ${LIVYATAN_MONGO_URL}
+        LIVYATAN_ALPHAVANTAGE_KEY: ${LIVYATAN_ALPHAVANTAGE_KEY}
+        LIVYATAN_OPENWEATHER_KEY: ${LIVYATAN_OPENWEATHER_KEY}
+        LIVYATAN_TWITTER_CONSUMER_KEY: ${LIVYATAN_TWITTER_CONSUMER_KEY}
+        LIVYATAN_TWITTER_CONSUMER_SECRET: ${LIVYATAN_TWITTER_CONSUMER_SECRET}
+        LIVYATAN_TWITTER_ACCESS_TOKEN_KEY: ${LIVYATAN_TWITTER_ACCESS_TOKEN_KEY}
+        LIVYATAN_TWITTER_ACCESS_TOKEN_SECRET: ${LIVYATAN_TWITTER_ACCESS_TOKEN_SECRET}
+    ports:
+      - 3001:3001

@@ -1,0 +1,21 @@
+.navbar-text {
+    color: white;
+}
+
+.navbar-button {
+    padding: 0 20px 0 0
+}
+
+.userId-message {
+    padding-right: 10px;
+}
+
+.feature-container {
+    width: 70%;
+    padding-top: 15px;
+    margin: auto;
+}
+.feature-card {
+    width: 1 fr;
+    height: 650px;
+}

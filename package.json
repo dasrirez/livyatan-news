@@ -1,0 +1,72 @@
+{
+  "name": "project-livyatan",
+  "version": "1.0.0",
+  "description": "Web application to aggregate news",
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject",
+    "compile": "babel src --out-dir .compiled --source-maps --watch"
+  },
+  "eslintConfig": {
+    "extends": "react-app"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/UTSCC09/project-livyatan.git"
+  },
+  "author": "Daniel Hugh, Darius Asri Rezaei, Jamie Nicol",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/UTSCC09/project-livyatan/issues"
+  },
+  "homepage": "https://livyatan.xyz",
+  "devDependencies": {
+    "@babel/cli": "^7.2.3",
+    "@babel/core": "^7.3.4",
+    "@babel/node": "^7.2.2",
+    "@babel/preset-env": "^7.3.4",
+    "cors": "^2.8.5",
+    "redux-logger": "^3.0.6"
+  },
+  "babel": {
+    "presets": [
+      "@babel/preset-env"
+    ]
+  },
+  "dependencies": {
+    "alphavantage": "^1.2.0",
+    "antd": "^3.15.1",
+    "body-parser": "^1.18.3",
+    "cookie": "^0.3.1",
+    "express": "^4.16.4",
+    "express-check": "0.0.1",
+    "express-session": "^1.15.6",
+    "express-validator": "^5.3.1",
+    "google-auth-library": "^3.1.2",
+    "helmet": "^3.16.0",
+    "js-cookie": "^2.2.0",
+    "mongodb": "^3.1.13",
+    "newsapi": "^2.4.0",
+    "openweather-apis": "^4.0.0",
+    "r": "0.0.5",
+    "react": "^16.8.4",
+    "react-bootstrap": "^1.0.0-beta.6",
+    "react-dom": "^16.8.4",
+    "react-google-login": "^5.0.2",
+    "react-redux": "^6.0.1",
+    "react-router": "^5.0.0",
+    "react-router-dom": "^5.0.0",
+    "react-scripts": "2.1.8",
+    "redux": "^4.0.1",
+    "redux-thunk": "^2.3.0",
+    "twitter": "^1.7.1"
+  },
+  "browserslist": [
+    ">0.2%",
+    "not dead",
+    "not ie <= 11",
+    "not op_mini all"
+  ]
+}
